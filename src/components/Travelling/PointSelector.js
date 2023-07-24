@@ -11,7 +11,7 @@ const PointSelector = ({ selectedPoint, onPointSelect, label }) => {
 
   return (
     <div>
-      {/* <h1>travel</h1> */}
+      <h1>travel</h1>
       <label>{label}:</label>
       <select onChange={handlePointChange} value={selectedPoint}>
         <option>Choose one</option>
