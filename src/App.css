@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Add a background image */
+*{
+  margin: 0px;
+  padding: 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.bg-container {
+  background-image: url("https://img.freepik.com/free-photo/airplane-flying-cloudy-sky_144627-132.jpg?w=996&t=st=1690128137~exp=1690128737~hmac=f7b00fff662f1645dc59f9af93de3116974a8954032fb591f324523e09bfcce7");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the dropdowns */
+.container select {
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Style the date input */
+.container input[type="date"] {
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Style the search button */
+.container button {
+  width: 150px;
+  height: 40px;
+  background-color: #4caf50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Adjust the layout for the error message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the container for the available vehicles list */
+.vehicle-list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+.vacals-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  margin-left: 5px;
+  text-align: center;
+  justify-content: center;
+  margin-right: 50px;
+  margin-top: 200px;
+}
+
+.list{
+  font-size: 30px;
+  list-style-type: none;
 }
